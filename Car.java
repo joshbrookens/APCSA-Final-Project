@@ -1,3 +1,7 @@
+/* Car class is child class of RaceCar class
+* speed and threshold variables are different from Truck class
+*/ @Author - Josh Brookens Project - Steer Car APCSA FINAL PROJECT End Date - 5/8/2025/
+    
 public class Car extends RaceCar{
     private int speed;
     private int threshold;

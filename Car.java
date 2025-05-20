@@ -5,7 +5,7 @@
 public class Car extends RaceCar{
     private int speed;
     private int threshold;
-    
+    /*Constructor of Car Class*/
          public Car (String name){
              super(name);
              speed = 1; // speed is twice of a truck's speed, so car has half as much reaction time

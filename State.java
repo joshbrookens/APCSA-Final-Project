@@ -1,3 +1,6 @@
+/* State class is back end of program
+* Contains many methods that are elements of the game
+*/ @Author - Josh Brookens Project - Steer Car APCSA FINAL PROJECT End Date - 5/8/2025/
 import java.util.Scanner;
 
 public class State {
@@ -22,12 +25,12 @@ public class State {
        
         Scanner scanner = new Scanner(System.in);
         
-        // Constructor for the State class
+        /* Constructor for the State class */
         public State(RaceCar vehicle){
         this.vehicle=vehicle; 
             }
         
-            //Player chooses to play again
+            /*Player chooses to play again*/
         public void keepPlaying(){
             yes = true;
             score = 0;
@@ -37,7 +40,7 @@ public class State {
         
             
         
-        // Prompt the user to start
+        /* This method runs the core of the game */
         public void playGame(){
             while(yes){
                 whileLoopCount++;
@@ -137,22 +140,26 @@ public class State {
             
         }
         
-        // This method is used to get the score of the game
+        /* This method is used to get the score of the game @ return score
+   */
     public double getScore(){
         return score;
     }
-        // clears number of rounds played
+        /* clears number of rounds played @ param rounds is the value that whileLoopCount gets reset to
+   */
     public void setRounds(int rounds){
         whileLoopCount = rounds;
     }
-        // This method is used to get the number of rounds played
+        /* This method is used to get the number of rounds played @ return whileLoopCount
+   */
     public int getRounds(){
         return whileLoopCount;
     }
         
         
         
-        //recursive method of 3 2 1 Go
+        /*recursive method of 3 2 1 Go @param x is the number the countdown starts at
+   */
     public void countDown(int x)
     {
         for(int i = 0; i< 60; i++){

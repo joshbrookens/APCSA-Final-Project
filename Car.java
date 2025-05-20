@@ -11,11 +11,13 @@ public class Car extends RaceCar{
              speed = 1; // speed is twice of a truck's speed, so car has half as much reaction time
              threshold = 500;// This is 500 milliseconds is an acceptable margin of error
          }
-         //Used in state to identify vehicle as truck or car.
+         /* Used in state to identify vehicle as truck or car. @return speed
+    */
          public int getSpeed(){
              return speed;
          }
-         //Used in state to calculate whether the person turned within the threshold of time.
+         /* Used in state to calculate whether the person turned within the threshold of time. @ return threshold
+    */
          public int getThreshold(){
              return threshold;
          }

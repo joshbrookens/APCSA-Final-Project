@@ -1,3 +1,7 @@
+/* CarTester is front end of the program
+* Contains user input and calls methods to make game run 
+*/ @Author - Josh Brookens Project - Steer Car APCSA FINAL PROJECT End Date - 5/8/2025/
+
 import java.util.Scanner; // imports ability to have keyboard input
 import java.util.ArrayList; // imports ability to have arrayLists
 public class CarTester
